@@ -1,4 +1,4 @@
-# FuelSDK-Python v1.3.0
+# FuelSDK-Python v1.3.1
 
 Salesforce Marketing Cloud Fuel SDK for Python
 
@@ -6,7 +6,7 @@ Salesforce Marketing Cloud Fuel SDK for Python
 
 The Fuel SDK for Python provides easy access to Salesforce Marketing Cloud's Fuel API Family services, including a collection of REST APIs and a SOAP API. These APIs provide access to Salesforce Marketing Cloud functionality via common collection types such as array/hash.
 
-New Features in Version 1.3.0
+New Features in Version 1.3.1
 ------------
 * Added Refresh Token support for OAuth2 authentication
 * Added Web/Public App support for OAuth2 authentication
@@ -14,7 +14,7 @@ New Features in Version 1.3.0
    More details on Access Tokens for Web/Public Apps can be found [here](https://developer.salesforce.com/docs/atlas.en-us.mc-app-development.meta/mc-app-development/access-token-app.htm)
 
    Sample config:
-   
+
    ```
   [Web Services]
   appsignature: none
@@ -25,7 +25,7 @@ New Features in Version 1.3.0
   baseapiurl: <REST TENANT SPECIFIC ENDPOINT>
   soapendpoint: <SOAP TENANT SPECIFIC ENDPOINT>
   wsdl_file_local_loc: <WSDL_PATH>/ExactTargetWSDL.xml
-  
+
   [Auth Service]
   useOAuth2Authentication: True
   accountId: <TARGET_ACCOUNT_ID>
@@ -36,7 +36,7 @@ New Features in Version 1.3.0
   ```
 
   Example passing config as a parameter to ET_Client constructor:
-  
+
   ```
   stubObj = ET_Client.ET_Client(
     False, False,
@@ -56,17 +56,17 @@ New Features in Version 1.3.0
         'authorizationCode': '<AUTHORIZATION_CODE_FOR_PUBLIC/WEB_APP>'
     })
   ```
-  
+
 * applicationType can have one of the following values: `server`, `public`, `web`. The default value of applicationType is `server`.
-  
+
 New Features in Version 1.2.0
 ------------
 * Added support for OAuth2 authentication - [More Details](https://developer.salesforce.com/docs/atlas.en-us.mc-app-development.meta/mc-app-development/integration-considerations.htm)
 
   To enable OAuth2 authentication, set `useOAuth2Authentication: True` in the config.python file or pass it in the params argument to the ET_Client constructor.
-  
+
   Sample Config for OAuth2:
-  
+
   ```
   [Web Services]
   appsignature: none
@@ -77,15 +77,15 @@ New Features in Version 1.2.0
   baseapiurl: <REST TENANT SPECIFIC ENDPOINT>
   soapendpoint: <SOAP TENANT SPECIFIC ENDPOINT>
   wsdl_file_local_loc: <WSDL_PATH>/ExactTargetWSDL.xml
-  
+
   [Auth Service]
   useOAuth2Authentication: True
   accountId: <TARGET_ACCOUNT_ID>
   scope: <PERMISSION_LIST>
   ```
-  
+
   Example passing config as a parameter to ET_Client constructor:
-  
+
   ```
   stubObj = ET_Client.ET_Client(
     False, False,
@@ -103,7 +103,7 @@ New Features in Version 1.2.0
     })
   ```
 
-New Features in Version 1.1.1 
+New Features in Version 1.1.1
 ------------
 * Added support for your tenant’s endpoints - [More Details](https://developer.salesforce.com/docs/atlas.en-us.mc-apis.meta/mc-apis/your-subdomain-tenant-specific-endpoints.htm)
 
