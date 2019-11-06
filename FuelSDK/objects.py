@@ -88,6 +88,13 @@ class ET_PushMessageContact(ET_CUDSupportRest):
         self.urlProps = ["messageId"]
         self.urlPropsRequired = []
 
+class ET_PushMessageBatch(ET_CUDSupportRest):
+    def __init__(self):
+        super(ET_PushMessageContact, self).__init__()
+        self.path = '/push/v1/messageBatch/{messageId}/send'
+        self.urlProps = ["messageId"]
+        self.urlPropsRequired = []
+
 class ET_PushMessageContact_Deliveries(ET_CUDSupportRest):
     def __init__(self):
         super(ET_PushMessageContact_Deliveries, self).__init__()
