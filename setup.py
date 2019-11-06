@@ -12,7 +12,7 @@ setup(
     author='ExactTarget',
     py_modules=['ET_Client'],
     packages=['FuelSDK'],
-    url='https://github.com/salesforce-marketingcloud/FuelSDK-Python',
+    url='https://github.com/albertabello-tw/FuelSDK-Python',
     license='MIT',
     install_requires=[
         'pyjwt>=1.5.3',
