@@ -85,7 +85,7 @@ class ET_PushMessageContact(ET_CUDSupportRest):
     def __init__(self):
         super(ET_PushMessageContact, self).__init__()
         self.path = '/push/v1/messageContact/{messageId}/send'
-        self.urlProps = ["messageId"]
+        self.urlProps = ["messageId","deviceTokens"]
         self.urlPropsRequired = []
 
 class ET_PushMessageBatch(ET_CUDSupportRest):
